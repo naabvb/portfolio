@@ -1,6 +1,7 @@
 import { Stack } from "@chakra-ui/react";
 import ImageOfMe from "../fragments/imageOfMe";
 import Headers from "../fragments/headers";
+import Occupation from "../fragments/occupation";
 
 function intro() {
   return (
@@ -18,6 +19,7 @@ function intro() {
         <Headers />
         <ImageOfMe />
       </Stack>
+      <Occupation />
     </Stack>
   );
 }
