@@ -1,7 +1,8 @@
-import { Stack } from "@chakra-ui/react";
+import { Stack, Button, Box } from "@chakra-ui/react";
 import ImageOfMe from "../fragments/imageOfMe";
 import Headers from "../fragments/headers";
 import Occupation from "../fragments/occupation";
+import SocialButtons from "../fragments/socialButtons";
 
 function intro() {
   return (
@@ -20,6 +21,7 @@ function intro() {
         <ImageOfMe />
       </Stack>
       <Occupation />
+      <SocialButtons />
     </Stack>
   );
 }
