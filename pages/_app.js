@@ -4,9 +4,9 @@ import theme from "../styles/theme";
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Flex justifyContent="center" flexDirection="column">
+
         <Component {...pageProps} />
-      </Flex>
+
     </ChakraProvider>
   );
 }

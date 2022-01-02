@@ -3,7 +3,11 @@ import { Box, Stack, Text } from "@chakra-ui/react";
 function occupation() {
   return (
     <Box>
-      <Stack ml={{ base: "2px", md: "5px", lg: "10px" }} direction="column">
+      <Stack
+        spacing="1"
+        ml={{ base: "2px", md: "5px", lg: "10px" }}
+        direction="column"
+      >
         <Text
           color="#8f9098"
           fontSize={{ base: "md", md: "lg", lg: "2xl", "2xl": "2xl" }}
