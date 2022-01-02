@@ -12,6 +12,12 @@ const styles = {
       color: mode("gray.800", "whiteAlpha.900")(props),
       bg: mode("gray.100", "black")(props),
     },
+    "span, h2, h1, p, img": {
+      _selection: {
+        color: mode("white", "black")(props),
+        bg: mode("black", "white")(props),
+      },
+    },
   }),
 };
 
@@ -22,13 +28,18 @@ const fontSizes = {
 };
 
 const breakpoints = createBreakpoints({
-  sm: '420px',
-  md: '768px',
-  lg: '1082px',
-  xl: '1200px',
-  '2xl': '1800px',
-})
+  sm: "420px",
+  md: "768px",
+  lg: "1082px",
+  xl: "1200px",
+  "2xl": "1800px",
+});
 
-const theme = extendTheme({ config, styles, fontSizes, breakpoints });
+const theme = extendTheme({
+  config,
+  styles,
+  fontSizes,
+  breakpoints,
+});
 
 export default theme;
