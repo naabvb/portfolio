@@ -12,8 +12,8 @@ function card({ badges, header, body, image }) {
     <Box
       mx="auto"
       rounded="lg"
-      shadow="md"
-      bg={useColorModeValue("white", "gray.800")}
+      shadow="lg"
+      bg={useColorModeValue("white", "#090909")}
       maxW="2xl"
     >
       <Image
@@ -51,7 +51,7 @@ function card({ badges, header, body, image }) {
             mt={2}
             as="span"
             fontSize="sm"
-            color={useColorModeValue("gray.600", "gray.400")}
+            color={useColorModeValue("gray.600", "#8f9098")}
           >
             {body}
           </Box>
