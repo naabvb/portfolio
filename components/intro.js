@@ -6,23 +6,25 @@ import SocialButtons from "../fragments/socialButtons";
 
 function intro() {
   return (
-    <Stack
-      mt="15vh"
-      ml="11vw"
-      mr="10vw"
-      alignItems="flex-start"
-      justifyContent="center"
-    >
+    <Box>
       <Stack
-        justifyContent="flex-start"
-        direction={{ base: "column-reverse", md: "row" }}
+        mt="8vh"
+        ml="11vw"
+        mr="10vw"
+        alignItems="flex-start"
+        justifyContent="center"
       >
-        <Headers />
-        <ImageOfMe />
+        <Stack
+          justifyContent="flex-start"
+          direction={{ base: "column-reverse", md: "row" }}
+        >
+          <Headers />
+          <ImageOfMe />
+        </Stack>
+        <Occupation />
+        <SocialButtons />
       </Stack>
-      <Occupation />
-      <SocialButtons />
-    </Stack>
+    </Box>
   );
 }
 

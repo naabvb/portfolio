@@ -10,6 +10,12 @@ import {
 function card({ badges, header, body, image }) {
   return (
     <Box
+      _hover={{
+        transform: "translate3D(0,1px,0) scale(1.03)",
+        transition: "all .4s ease",
+      }}
+      transition="all .5s ease"
+      className="superCard"
       mx="auto"
       rounded="lg"
       shadow="lg"
@@ -19,7 +25,7 @@ function card({ badges, header, body, image }) {
       <Image
         roundedTop="lg"
         w="full"
-        h={64}
+        h={{ base: 40, md: 52, xl: 56 }}
         fit="cover"
         src={`/images/${image}`}
         alt="Image showing the project"
@@ -34,8 +40,8 @@ function card({ badges, header, body, image }) {
             color={useColorModeValue("brand.600", "brand.400")}
           >
             <Stack direction="row" spacing="1">
-              {badges.map((item) => (
-                <Badge>{item}</Badge>
+              {badges.map((item, index) => (
+                <Badge key={index}>{item}</Badge>
               ))}
             </Stack>
           </Box>
