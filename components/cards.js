@@ -3,7 +3,7 @@ import Card from "../fragments/card";
 
 function cards() {
   return (
-    <Flex alignItems="flex-start" ml="11vw" mt="2vh" mr="10vw">
+    <Flex alignItems="flex-start" mx="10vw" mt="5vh">
       <Stack ml={{ base: "2px", md: "5px", lg: "10px" }} direction="column">
         <Heading my="2vh">Projects</Heading>
         <Stack direction={{ base: "column", lg: "row" }} spacing="10">
@@ -11,7 +11,7 @@ function cards() {
             badges={["NodeJs", "React", "Python"]}
             image="trailcams.png"
             header="Trailcams PWA"
-            body="A true fullstack application that consists of NodeJS backend, React frontend and multiple Python microservices,"
+            body="Fullstack application that consists of NodeJS backend, React frontend, multiple Python microservices and AWS integration."
           />
           <Card
             badges={["Javascript", "P5.JS"]}

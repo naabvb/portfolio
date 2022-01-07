@@ -1,11 +1,5 @@
-import {
-  Box,
-  Image,
-  Heading,
-  useColorModeValue,
-  Badge,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Image, useColorModeValue, Badge, Stack } from "@chakra-ui/react";
+import ReadMoreModal from "../fragments/readMoreModal";
 
 function card({ badges, header, body, image }) {
   return (
@@ -20,6 +14,7 @@ function card({ badges, header, body, image }) {
       rounded="lg"
       shadow="lg"
       bg={useColorModeValue("white", "#090909")}
+      width={{ lg: "33%" }}
       maxW="2xl"
     >
       <Image
@@ -45,14 +40,7 @@ function card({ badges, header, body, image }) {
               ))}
             </Stack>
           </Box>
-          <Heading
-            color={useColorModeValue("gray.800", "white")}
-            fontWeight="bold"
-            fontSize="2xl"
-            mt={2}
-          >
-            {header}
-          </Heading>
+          <ReadMoreModal header={header} />
           <Box
             mt={2}
             as="span"
