@@ -14,13 +14,13 @@ function imageOfMe() {
           base: "80px",
           md: "150px",
           lg: "250px",
-          "2xl": "400px",
+          "2xl": "350px",
         }}
         maxWidth={{
           base: "80px",
           md: "150px",
           lg: "250px",
-          "2xl": "400px",
+          "2xl": "350px",
         }}
         src="/images/lauri.png"
         alt="Picture of Lauri"
