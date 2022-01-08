@@ -3,6 +3,7 @@ import ImageOfMe from "../fragments/imageOfMe";
 import Headers from "../fragments/headers";
 import Occupation from "../fragments/occupation";
 import SocialButtons from "../fragments/socialButtons";
+import { basicInfo } from "../data/basicInfo";
 
 function intro() {
   return (
@@ -17,11 +18,11 @@ function intro() {
           justifyContent="flex-start"
           direction={{ base: "column-reverse", md: "row" }}
         >
-          <Headers />
-          <ImageOfMe />
+          <Headers headers={basicInfo.headers} />
+          <ImageOfMe image={basicInfo.imageName} />
         </Stack>
-        <Occupation />
-        <SocialButtons />
+        <Occupation occupation={basicInfo.occupation} />
+        <SocialButtons social={basicInfo.social} />
       </Stack>
     </Box>
   );

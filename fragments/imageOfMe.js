@@ -1,6 +1,6 @@
 import { Box, Image } from "@chakra-ui/react";
 
-function imageOfMe() {
+function imageOfMe({ image }) {
   return (
     <Box alignItems="center" display="flex">
       <Image
@@ -22,7 +22,7 @@ function imageOfMe() {
           lg: "250px",
           "2xl": "350px",
         }}
-        src="/images/lauri.png"
+        src={`/images/${image}`}
         alt="Picture of Lauri"
       />
     </Box>

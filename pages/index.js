@@ -1,12 +1,12 @@
 import { Flex } from "@chakra-ui/react";
 import Intro from "../components/intro";
-import Cards from "../components/cards";
+import Showcase from "../components/showcase";
 
 export default function Home() {
   return (
     <Flex justifyContent="center" flexDirection="column">
       <Intro />
-      <Cards />
+      <Showcase />
     </Flex>
   );
 }

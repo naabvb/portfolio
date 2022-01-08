@@ -4,10 +4,10 @@ import {
   ModalOverlay,
   ModalContent,
   Heading,
-  useColorModeValue,
   ModalHeader,
   ModalCloseButton,
   Link,
+  Box,
   ModalBody,
   ModalFooter,
   Image,
@@ -17,13 +17,8 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function readMoreModal({ card, modal, disclosure }) {
   const { isOpen, onClose } = disclosure;
   return (
-    <>
-      <Heading
-        color={useColorModeValue("gray.800", "white")}
-        fontWeight="bold"
-        fontSize="2xl"
-        mt={2}
-      >
+    <Box>
+      <Heading color="white" fontWeight="bold" fontSize="2xl" mt={2}>
         {card.header}
       </Heading>
       <Modal size="4xl" isOpen={isOpen} onClose={onClose}>
@@ -53,7 +48,7 @@ function readMoreModal({ card, modal, disclosure }) {
           </ModalFooter>
         </ModalContent>
       </Modal>
-    </>
+    </Box>
   );
 }
 

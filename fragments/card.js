@@ -7,17 +7,14 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import ReadMoreModal from "../components/readMoreModal";
+import { transitions } from "../styles/transitions";
 
 function card({ project }) {
   const disclosure = useDisclosure();
   return (
     <Box
-      _hover={{
-        transform: "translate3D(0,1px,0) scale(1.03)",
-        transition: "all .4s ease",
-        cursor: "pointer",
-      }}
-      transition="all .5s ease"
+      _hover={transitions.card.hover}
+      transition={transitions.card.transition}
       className="superCard"
       mx="auto"
       rounded="lg"

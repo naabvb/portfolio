@@ -1,6 +1,6 @@
 import { Stack, Box, Text, Heading } from "@chakra-ui/react";
 
-function headers() {
+function headers({ headers }) {
   return (
     <Stack
       spacing={{ base: "3", md: "5", lg: "7" }}
@@ -15,7 +15,7 @@ function headers() {
         as="h1"
         fontSize={{ base: "5xl", md: "7xl", lg: "9xl", "2xl": "11xl" }}
       >
-        Lauri Pimiä
+        {headers.name}
       </Heading>
       <Box>
         <Text
@@ -26,10 +26,7 @@ function headers() {
           as="h2"
         >
           <Box as="span" color="#8f9098">
-            Full-Stack
-          </Box>{" "}
-          <Box as="span" color="#8f9098">
-            software engineer.
+            {headers.title}
           </Box>
         </Text>
       </Box>

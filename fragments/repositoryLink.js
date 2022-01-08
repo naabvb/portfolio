@@ -1,5 +1,6 @@
 import { Box, Stack, Heading, Text, Icon, Link } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
+import { transitions } from "../styles/transitions";
 
 function repositoryLink({ header, body, link }) {
   return (
@@ -9,12 +10,8 @@ function repositoryLink({ header, body, link }) {
         p="2"
         bg="#222222"
         my="3"
-        _hover={{
-          transform: "translate3D(0,1px,0) scale(1.03)",
-          transition: "all .4s ease",
-          cursor: "pointer",
-        }}
-        transition="all .5s ease"
+        _hover={transitions.card.hover}
+        transition={transitions.card.transition}
       >
         <Stack
           alignItems="center"

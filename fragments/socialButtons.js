@@ -1,7 +1,7 @@
-import { Box, Stack, Button, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Stack, Button, useBreakpointValue, Link } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-function socialButtons() {
+function socialButtons({ social }) {
   const buttonSize = useBreakpointValue({ base: "md", md: "lg" });
   return (
     <Box>
@@ -11,12 +11,16 @@ function socialButtons() {
         spacing={5}
         direction="row"
       >
-        <Button size={buttonSize} leftIcon={<FaGithub color="#ffffff" />}>
-          Github
-        </Button>
-        <Button size={buttonSize} leftIcon={<FaLinkedin color="#0077b5" />}>
-          LinkedIn
-        </Button>
+        <Link isExternal href={social.githubLink}>
+          <Button size={buttonSize} leftIcon={<FaGithub color="#ffffff" />}>
+            Github
+          </Button>
+        </Link>
+        <Link isExternal href={social.linkedinLink}>
+          <Button size={buttonSize} leftIcon={<FaLinkedin color="#0077b5" />}>
+            LinkedIn
+          </Button>
+        </Link>
       </Stack>
     </Box>
   );

@@ -2,7 +2,7 @@ import { Flex, Stack, Heading } from "@chakra-ui/react";
 import { projects } from "../data/projects";
 import Card from "../fragments/card";
 
-function cards() {
+function showcase() {
   return (
     <Flex alignItems="flex-start" mx="10vw" mt="5vh">
       <Stack ml={{ base: "2px", md: "5px", lg: "10px" }} direction="column">
@@ -17,4 +17,4 @@ function cards() {
   );
 }
 
-export default cards;
+export default showcase;

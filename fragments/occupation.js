@@ -1,6 +1,6 @@
 import { Box, Stack, Text } from "@chakra-ui/react";
 
-function occupation() {
+function occupation({ occupation }) {
   return (
     <Box>
       <Stack
@@ -12,15 +12,13 @@ function occupation() {
           color="#8f9098"
           fontSize={{ base: "md", md: "lg", lg: "2xl", "2xl": "2xl" }}
         >
-          <Box as="span">💼</Box>{" "}
-          <Box as="span">Application specialist at Samlink Oy Ab</Box>
+          <Box as="span">💼</Box> <Box as="span">{occupation.work}</Box>
         </Text>
         <Text
           color="#8f9098"
           fontSize={{ base: "md", md: "lg", lg: "2xl", "2xl": "2xl" }}
         >
-          <Box as="span">🎓</Box>{" "}
-          <Box as="span">M.Sc. in Mathematical Information Technology</Box>
+          <Box as="span">🎓</Box> <Box as="span">{occupation.education}</Box>
         </Text>
         <Text
           color="#8f9098"
@@ -29,7 +27,7 @@ function occupation() {
           <Box mx="4.5px" as="span">
             📍
           </Box>{" "}
-          <Box as="span">Jyväskylä, Finland</Box>
+          <Box as="span">{occupation.location}</Box>
         </Text>
       </Stack>
     </Box>
