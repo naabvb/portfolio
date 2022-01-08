@@ -12,7 +12,7 @@ const styles = {
       color: mode("gray.800", "white")(props),
       bg: mode("gray.100", "black")(props),
     },
-    "span, h2, h1, p, img": {
+    "span, h2, h1, p, img, a": {
       _selection: {
         color: mode("white", "black")(props),
         bg: mode("black", "white")(props),
@@ -32,7 +32,7 @@ const breakpoints = createBreakpoints({
   md: "768px",
   lg: "1082px",
   xl: "1200px",
-  "2xl": "1800px",
+  "2xl": "1950px",
 });
 
 const theme = extendTheme({
