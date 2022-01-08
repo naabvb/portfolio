@@ -1,29 +1,17 @@
 import { Box, Stack, Text } from "@chakra-ui/react";
+import { fonts, margins } from "../styles/theme";
 
 function occupation({ occupation }) {
   return (
     <Box>
-      <Stack
-        spacing="1"
-        ml={{ base: "2px", md: "5px", lg: "10px" }}
-        direction="column"
-      >
-        <Text
-          color="#8f9098"
-          fontSize={{ base: "md", md: "lg", lg: "2xl", "2xl": "2xl" }}
-        >
+      <Stack spacing="1" ml={margins.centeringMargin} direction="column">
+        <Text className="occupationText" fontSize={fonts.occupationFontSize}>
           <Box as="span">💼</Box> <Box as="span">{occupation.work}</Box>
         </Text>
-        <Text
-          color="#8f9098"
-          fontSize={{ base: "md", md: "lg", lg: "2xl", "2xl": "2xl" }}
-        >
+        <Text className="occupationText" fontSize={fonts.occupationFontSize}>
           <Box as="span">🎓</Box> <Box as="span">{occupation.education}</Box>
         </Text>
-        <Text
-          color="#8f9098"
-          fontSize={{ base: "md", md: "lg", lg: "2xl", "2xl": "2xl" }}
-        >
+        <Text className="occupationText" fontSize={fonts.occupationFontSize}>
           <Box mx="4.5px" as="span">
             📍
           </Box>{" "}

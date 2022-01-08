@@ -18,17 +18,22 @@ function readMoreModal({ card, modal, disclosure }) {
   const { isOpen, onClose } = disclosure;
   return (
     <Box>
-      <Heading color="white" fontWeight="bold" fontSize="2xl" mt={2}>
+      <Heading className="cardHeader" fontWeight="bold" fontSize="2xl" mt={2}>
         {card.header}
       </Heading>
       <Modal size="4xl" isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent bg="#090909">
-          <ModalHeader fontWeight="bold" fontSize="2xl" color="white">
+        <ModalContent bg="none">
+          <ModalHeader
+            roundedTop="lg"
+            className="modalBody modalHeader"
+            fontWeight="bold"
+            fontSize="2xl"
+          >
             {modal.header}
           </ModalHeader>
           <ModalCloseButton />
-          <ModalBody color="#8f9098">
+          <ModalBody className="modalBody modalBodyText">
             <Image
               rounded="lg"
               w="full"
@@ -39,9 +44,14 @@ function readMoreModal({ card, modal, disclosure }) {
             {modal.body}
           </ModalBody>
 
-          <ModalFooter>
+          <ModalFooter roundedBottom="lg" className="modalBody">
             <Link href={modal.externalLink.link} isExternal>
-              <Button variant="ghost" rightIcon={<FaExternalLinkAlt />}>
+              <Button
+                className="externalLinkButton"
+                color="none"
+                variant="ghost"
+                rightIcon={<FaExternalLinkAlt />}
+              >
                 {modal.externalLink.text}
               </Button>
             </Link>

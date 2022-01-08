@@ -1,4 +1,5 @@
 import { Stack, Box, Text, Heading } from "@chakra-ui/react";
+import { margins } from "../styles/theme";
 
 function headers({ headers }) {
   return (
@@ -11,7 +12,7 @@ function headers({ headers }) {
       <Heading
         whiteSpace="nowrap"
         fontWeight="bold"
-        color="white"
+        className="primaryHeader"
         as="h1"
         fontSize={{ base: "5xl", md: "7xl", lg: "9xl", "2xl": "11xl" }}
       >
@@ -20,12 +21,12 @@ function headers({ headers }) {
       <Box>
         <Text
           whiteSpace="nowrap"
-          ml={{ base: "2px", md: "5px", lg: "10px" }}
+          ml={margins.centeringMargin}
           fontWeight="semibold"
           fontSize={{ base: "1xl", md: "3xl", lg: "5xl", "2xl": "7xl" }}
           as="h2"
         >
-          <Box as="span" color="#8f9098">
+          <Box className="secondaryHeader" as="span">
             {headers.title}
           </Box>
         </Text>

@@ -15,12 +15,11 @@ function card({ project }) {
     <Box
       _hover={transitions.card.hover}
       transition={transitions.card.transition}
-      className="superCard"
+      className="cardBody"
       mx="auto"
       rounded="lg"
       onClick={() => disclosure.onOpen()}
       shadow="lg"
-      bg={useColorModeValue("white", "#090909")}
       width={{ lg: "33%" }}
       maxW="2xl"
     >
@@ -34,12 +33,7 @@ function card({ project }) {
       />
 
       <Box p={6}>
-        <Box
-          as="span"
-          fontSize="xs"
-          textTransform="uppercase"
-          color={useColorModeValue("brand.600", "brand.400")}
-        >
+        <Box as="span" fontSize="xs" textTransform="uppercase">
           <Stack direction="row" spacing="1">
             {project.card.badges.map((item, index) => (
               <Badge key={index}>{item}</Badge>
@@ -52,12 +46,7 @@ function card({ project }) {
           modal={project.modal}
           externalLink={project.externalLink}
         />
-        <Box
-          mt={2}
-          as="span"
-          fontSize="sm"
-          color={useColorModeValue("gray.600", "#8f9098")}
-        >
+        <Box mt={2} as="span" fontSize="sm" className="cardBodyText">
           {project.card.body}
         </Box>
       </Box>

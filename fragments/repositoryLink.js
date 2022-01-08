@@ -8,8 +8,9 @@ function repositoryLink({ header, body, link }) {
       <Box
         rounded="lg"
         p="2"
-        bg="#222222"
         my="3"
+        className="repositoryLinkBody"
+        shadow="md"
         _hover={transitions.card.hover}
         transition={transitions.card.transition}
       >
@@ -20,12 +21,19 @@ function repositoryLink({ header, body, link }) {
           justifyContent="space-between"
         >
           <Stack direction="column">
-            <Heading color="white" size="sm">
+            <Heading className="repositoryLinkHeader" size="sm">
               {header}
             </Heading>
-            <Text fontSize="sm">{body}</Text>
+            <Text fontSize="sm" className="repositoryLinkBodyText">
+              {body}
+            </Text>
           </Stack>
-          <Icon boxSize="1.5em" color="white" as={FaGithub} />
+          <Icon
+            boxSize="1.5em"
+            color="none"
+            className="repositoryLinkIcon"
+            as={FaGithub}
+          />
         </Stack>
       </Box>
     </Link>
