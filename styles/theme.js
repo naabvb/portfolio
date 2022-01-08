@@ -18,7 +18,47 @@ const styles = {
         bg: mode("black", "white")(props),
       },
     },
+    ".cardBody, .modalBody": {
+      bg: mode("white", "#090909")(props),
+    },
+    ".cardBodyText, .modalBodyText, .repositoryLinkBodyText": {
+      color: mode("gray.700", "#8f9098")(props),
+    },
+    ".cardHeader, .modalHeader, .showcaseHeader": {
+      color: mode("gray.800", "white")(props),
+    },
+    ".repositoryLinkBody": {
+      bg: mode("gray.100", "#222222")(props),
+    },
+    ".repositoryLinkHeader, .repositoryLinkIcon, .externalLinkButton": {
+      color: mode("black", "white")(props),
+    },
+    ".occupationText": {
+      color: mode("gray.900", "#8f9098")(props),
+    },
+    ".showcaseHeader": {
+      bgGradient: mode("linear(to-l, #000046, #0d6983)", "none")(props),
+      bgClip: mode("text", "none")(props),
+    },
+    ".primaryHeader": {
+      color: "white",
+      bgGradient: mode("linear(to-l, #b92b27, #1565C0)", "none")(props),
+      bgClip: mode("text", "")(props),
+    },
+    ".secondaryHeader": {
+      color: "gray.200",
+      bgGradient: mode("linear(to-l, #8A2387, #E94057)")(props),
+      bgClip: mode("text", "")(props),
+    },
   }),
+};
+
+export const margins = {
+  centeringMargin: { base: "2px", md: "5px", lg: "10px" },
+};
+
+export const fonts = {
+  occupationFontSize: { base: "md", md: "lg", lg: "2xl", "2xl": "2xl" },
 };
 
 const fontSizes = {
