@@ -6,7 +6,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "docker:build:nginx": "docker build . -f dockerfile.nginx-with-brotli -t nginx-with-brotli",
+    "docker:build:compiler": "docker build . -f dockerfile.compiler -t compiler",
+    "docker:build:server": "docker build . -f dockerfile.server -t portfolio-server",
+    "docker:build": "npm run docker:build:nginx && npm run docker:build:compiler && npm run docker:build:server",
+    "docker:run:server": "docker run --rm -d --name portfolio-server -p 3000:80/tcp portfolio-server:latest"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.7.3",
@@ -21,6 +26,8 @@
   },
   "devDependencies": {
     "eslint": "8.5.0",
-    "eslint-config-next": "12.0.7"
+    "eslint-config-next": "12.0.7",
+    "grunt": "^1.4.1",
+    "grunt-contrib-compress": "^2.0.0"
   }
 }
