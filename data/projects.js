@@ -6,12 +6,12 @@ export const projects = [
     card: {
       badges: ["NodeJS", "React", "Python"],
       header: "Trailcams PWA",
-      image: "trailcams.png",
+      image: "trailcams.jpg",
       body: "Fullstack application that consists of NodeJS backend, React frontend, multiple Python microservices and AWS integration.",
     },
     modal: {
       header: "Trailcams PWA",
-      image: "trailcams.png",
+      image: "trailcams.jpg",
       body: (
         <Box>
           <Text p="1" my="3">
@@ -64,12 +64,12 @@ export const projects = [
     card: {
       badges: ["Javascript", "P5.JS"],
       header: "Fractal Experiments",
-      image: "fractal.png",
+      image: "fractal.jpg",
       body: "Canvas app made with P5.JS that procedually generates landscape and perlin noise skybox with clouds.",
     },
     modal: {
       header: "Fractal Experiments",
-      image: "fractal.png",
+      image: "fractal.jpg",
       body: (
         <Box mt="6">
           <RepositoryLink
