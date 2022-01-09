@@ -1,9 +1,9 @@
 FROM node:14-alpine as compiler
 WORKDIR /usr/app
 
-COPY package*.json .
-COPY Gruntfile.js .
-COPY next.config.js .
+COPY package*.json ./
+COPY Gruntfile.js ./
+COPY next.config.js ./
 
 COPY components components
 COPY data data
