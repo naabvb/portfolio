@@ -23,7 +23,7 @@ function socialButtons({ social }) {
         >
           <Link isExternal href={social.githubLink}>
             <Button
-              bg={useColorModeValue("white", "#090909")}
+              bg={useColorModeValue("white", "#111111")}
               shadow="md"
               size={buttonSize}
               leftIcon={<FaGithub className="repositoryLinkIcon" />}
@@ -39,7 +39,7 @@ function socialButtons({ social }) {
         >
           <Link isExternal href={social.linkedinLink}>
             <Button
-              bg={useColorModeValue("white", "#090909")}
+              bg={useColorModeValue("white", "#111111")}
               shadow="md"
               size={buttonSize}
               leftIcon={<FaLinkedin color="#0077b5" />}

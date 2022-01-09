@@ -19,7 +19,7 @@ const styles = {
       },
     },
     ".cardBody, .modalBody": {
-      bg: mode("white", "#090909")(props),
+      bg: mode("white", "#111111")(props),
     },
     ".cardBodyText, .modalBodyText, .repositoryLinkBodyText": {
       color: mode("gray.700", "#8f9098")(props),
