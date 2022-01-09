@@ -12,7 +12,7 @@ const styles = {
       color: mode("gray.800", "white")(props),
       bg: mode("gray.100", "black")(props),
     },
-    "span, h2, h1, p, img, a": {
+    "span, h2, h1, p, img, a, .modalHeader": {
       _selection: {
         color: mode("white", "black")(props),
         bg: mode("black", "white")(props),

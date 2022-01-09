@@ -101,13 +101,14 @@ export const projects = [
   {
     card: {
       badges: ["Flutter", "React Native", "Kotlin", "Swift"],
-      header: "Cross-platform benchmark apps (Master's thesis)",
+      header:
+        "The challenges of cross-platform technologies in mobile development (Master's thesis)",
       image: "gradu.jpg",
       body: "Four benchmark apps for comparing different cross-platform techniques. Apps were developed with Flutter, React Native, Kotlin and Swift.",
     },
     modal: {
       header:
-        "The challenges of cross-platform technologies in mobile development",
+        "The challenges of cross-platform technologies in mobile development (Master's thesis)",
       image: "gradu.jpg",
       body: (
         <Box mt="6">
@@ -117,16 +118,16 @@ export const projects = [
             link="https://github.com/naabvb/TIES502-thesis-benchmarks"
           />
           <Text p="1" my="3">
-            The ever-increasing proliferation of smartphones is directing more
-            and more re- sources to the development of various mobile
-            applications. Mobile applications are traditio- nally developed with
+            The ever increasing proliferation of smartphones is directing more
+            and more resources to the development of various mobile
+            applications. Mobile applications are traditionally developed with
             native technologies based on the target platform, but this can cause
-            sig- nificant inefficiencies if the application is targeting
-            multiple different platforms.
+            significant inefficiencies if the application is targeting multiple
+            different platforms.
           </Text>
           <Text p="1" my="3">
-            To address this inefficiency, so-called cross-platform techniques
-            have been developed to enable the uti- lization of same code on
+            To address this inefficiency, so called cross-platform techniques
+            have been developed to enable the utilization of same code on
             multiple target platforms. However, there are a huge number of
             different cross-platform techniques, in addition to which they offer
             very different levels of results.
@@ -135,16 +136,16 @@ export const projects = [
             This thesis investigates the applicability of two new cross-platform
             technologies: Flutter and React-Native to general mobile application
             development. Particular attention is paid to how the above
-            techniques work compared to native techniques and what trade-offs
+            techniques work compared to native techniques and what tradeoffs
             they require.
           </Text>
           <Text p="1" my="3">
             The study was carried out as a comparative study, which also
             included a test application produced with the different native and
-            cross platform techniques as an experi- mental study. The results of
+            cross platform techniques as an experimental study. The results of
             this test application and the knowledge gathered in the literature
             review were then utilized to create a framework that provides a
-            clear picture of the weak- nesses and strengths of Flutter and
+            clear picture of the weaknesses and strengths of Flutter and
             React-Native from the perspective of both the application developer
             and the end user.
           </Text>

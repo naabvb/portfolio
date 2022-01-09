@@ -17,7 +17,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function readMoreModal({ card, modal, disclosure }) {
   const { isOpen, onClose } = disclosure;
   return (
-    <Box>
+    <Box noOfLines={1}>
       <Heading className="cardHeader" fontWeight="bold" fontSize="2xl" mt={2}>
         {card.header}
       </Heading>

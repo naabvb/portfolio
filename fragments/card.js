@@ -1,11 +1,4 @@
-import {
-  Box,
-  Image,
-  useColorModeValue,
-  Badge,
-  Stack,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Box, Image, Badge, Stack, useDisclosure } from "@chakra-ui/react";
 import ReadMoreModal from "../components/readMoreModal";
 import { transitions } from "../styles/transitions";
 
@@ -20,8 +13,9 @@ function card({ project }) {
       rounded="lg"
       onClick={() => disclosure.onOpen()}
       shadow="lg"
-      width={{ lg: "33%" }}
+      overflow="hidden"
       maxW="2xl"
+      noOfLines={3}
     >
       <Image
         roundedTop="lg"
@@ -46,7 +40,13 @@ function card({ project }) {
           modal={project.modal}
           externalLink={project.externalLink}
         />
-        <Box mt={2} as="span" fontSize="sm" className="cardBodyText">
+        <Box
+          noOfLines={2}
+          mt={2}
+          as="span"
+          fontSize="sm"
+          className="cardBodyText"
+        >
           {project.card.body}
         </Box>
       </Box>

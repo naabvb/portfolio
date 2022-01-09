@@ -9,7 +9,7 @@ function intro() {
   return (
     <Box>
       <Stack
-        mt={{ base: "7vh", lg: "5vh", "2xl": "10vh" }}
+        mt={{ base: "7vh", lg: "5vh", "2xl": "9.5vh" }}
         mx="10vw"
         alignItems="flex-start"
         justifyContent="center"
