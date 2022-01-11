@@ -5,6 +5,8 @@ COPY package*.json ./
 COPY Gruntfile.js ./
 COPY next.config.js ./
 
+RUN npm install && npm install -g grunt-cli
+
 COPY components components
 COPY data data
 COPY fragments fragments
@@ -12,6 +14,5 @@ COPY pages pages
 COPY public public
 COPY styles styles
 
-RUN npm install && npm install -g grunt-cli
 RUN npm run export
 RUN grunt

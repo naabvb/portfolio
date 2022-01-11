@@ -1,4 +1,11 @@
-import { Box, Image, Badge, Stack, useDisclosure } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Badge,
+  Stack,
+  useDisclosure,
+  Heading,
+} from "@chakra-ui/react";
 import ReadMoreModal from "../components/readMoreModal";
 import { transitions } from "../styles/transitions";
 
@@ -30,26 +37,27 @@ function card({ project }) {
         <Box as="span" fontSize="xs" textTransform="uppercase">
           <Stack direction="row" spacing="1">
             {project.card.badges.map((item, index) => (
-              <Badge key={index}>{item}</Badge>
+              <Badge px={1} py={0.4} key={index}>
+                {item}
+              </Badge>
             ))}
           </Stack>
         </Box>
-        <ReadMoreModal
-          card={project.card}
-          disclosure={disclosure}
-          modal={project.modal}
-          externalLink={project.externalLink}
-        />
-        <Box
-          noOfLines={2}
-          mt={2}
-          as="span"
-          fontSize="sm"
-          className="cardBodyText"
-        >
+        <Box pt="4px" pb="4px" noOfLines={1}>
+          <Heading className="cardHeader" fontWeight="bold" fontSize="xl">
+            {project.card.header}
+          </Heading>
+        </Box>
+        <Box noOfLines={2} as="span" fontSize="sm" className="cardBodyText">
           {project.card.body}
         </Box>
       </Box>
+      <ReadMoreModal
+        card={project.card}
+        disclosure={disclosure}
+        modal={project.modal}
+        externalLink={project.externalLink}
+      />
     </Box>
   );
 }

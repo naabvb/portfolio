@@ -10,6 +10,10 @@ export default function Home() {
       <Head>
         <title>Lauri Pimiä</title>
         <meta name="title" content="Lauri Pimiä" />
+        <meta
+          name="description"
+          content="Full-Stack software engineer from Finland."
+        />
       </Head>
       <ThemeToggle />
       <Flex justifyContent="center" flexDirection="column">
