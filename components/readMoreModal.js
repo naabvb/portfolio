@@ -23,7 +23,7 @@ function readMoreModal({ modal, disclosure }) {
         <ModalHeader
           roundedTop="lg"
           className="modalBody modalHeader"
-          fontWeight="bold"
+          fontWeight="700"
           fontSize="2xl"
         >
           {modal.header}

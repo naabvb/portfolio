@@ -11,6 +11,7 @@ function showcase() {
         <SlideFade in={true} transition={transitions.showcase.header}>
           <Heading
             className="showcaseHeader"
+            fontWeight="500"
             my="2vh"
             pb="4px"
             fontSize={{ base: "4xl", "2xl": "5xl" }}

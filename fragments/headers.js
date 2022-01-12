@@ -13,7 +13,7 @@ function headers({ headers }) {
       <SlideFade in={true} transition={transitions.header.slideFade}>
         <Heading
           whiteSpace="nowrap"
-          fontWeight="bold"
+          fontWeight="700"
           className="primaryHeader"
           as="h1"
           fontSize={{ base: "5xl", md: "7xl", lg: "9xl", "2xl": "11xl" }}
@@ -26,7 +26,7 @@ function headers({ headers }) {
           <Text
             whiteSpace="nowrap"
             ml={margins.centeringMargin}
-            fontWeight="semibold"
+            fontWeight="600"
             fontSize={{ base: "1xl", md: "3xl", lg: "5xl", "2xl": "7xl" }}
             as="h2"
           >

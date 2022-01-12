@@ -43,8 +43,8 @@ function card({ project }) {
             ))}
           </Stack>
         </Box>
-        <Box pt="4px" pb="4px" noOfLines={1}>
-          <Heading className="cardHeader" fontWeight="bold" fontSize="xl">
+        <Box pt="4px" pb="2.5px" noOfLines={1}>
+          <Heading className="cardHeader" fontWeight="700" fontSize="xl">
             {project.card.header}
           </Heading>
         </Box>

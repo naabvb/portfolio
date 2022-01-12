@@ -57,8 +57,13 @@ export const margins = {
   centeringMargin: { base: "2px", md: "5px", lg: "10px" },
 };
 
-export const fonts = {
+export const customFontSizes = {
   occupationFontSize: { base: "md", md: "lg", lg: "2xl", "2xl": "2xl" },
+};
+
+const fonts = {
+  heading: "Open Sans",
+  body: "Open Sans",
 };
 
 const fontSizes = {
@@ -78,6 +83,7 @@ const breakpoints = createBreakpoints({
 const theme = extendTheme({
   config,
   styles,
+  fonts,
   fontSizes,
   breakpoints,
 });

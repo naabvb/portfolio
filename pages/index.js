@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="title" content="Lauri Pimiä" />
         <meta
           name="description"
-          content="Full-Stack software engineer from Finland."
+          content="Full Stack software engineer from Finland."
         />
       </Head>
       <ThemeToggle />

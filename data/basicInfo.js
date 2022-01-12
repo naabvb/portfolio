@@ -1,7 +1,7 @@
 export const basicInfo = {
   headers: {
     name: "Lauri Pimiä",
-    title: "Full-Stack software engineer.",
+    title: "Full Stack software engineer.",
   },
   occupation: {
     work: "Application specialist at Oy Samlink Ab",

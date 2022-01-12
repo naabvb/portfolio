@@ -25,6 +25,7 @@ function socialButtons({ social }) {
             <Button
               bg={useColorModeValue("white", "#111111")}
               shadow="md"
+              fontWeight="500"
               size={buttonSize}
               leftIcon={<FaGithub className="repositoryLinkIcon" />}
             >
@@ -41,6 +42,7 @@ function socialButtons({ social }) {
             <Button
               bg={useColorModeValue("white", "#111111")}
               shadow="md"
+              fontWeight="500"
               size={buttonSize}
               leftIcon={<FaLinkedin color="#0077b5" />}
             >
