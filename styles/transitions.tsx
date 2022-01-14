@@ -1,4 +1,6 @@
-export const transitions = {
+import { Transitions } from "../interfaces/transitions";
+
+export const transitions: Transitions = {
   card: {
     hover: {
       transform: "translate3D(0,1px,0) scale(1.03)",
@@ -27,9 +29,11 @@ export const transitions = {
   },
   showcase: {
     header: { enter: { duration: 0.3, delay: 1.2 } },
-    card0: { enter: { duration: 0.4, delay: 1.4 } },
-    card1: { enter: { duration: 0.4, delay: 1.6 } },
-    card2: { enter: { duration: 0.4, delay: 1.8 } },
+    cards: {
+      card1: { enter: { duration: 0.4, delay: 1.4 } },
+      card2: { enter: { duration: 0.4, delay: 1.6 } },
+      card3: { enter: { duration: 0.4, delay: 1.8 } },
+    },
   },
   themeToggle: { enter: { duration: 0.4, delay: 2 } },
 };

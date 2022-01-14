@@ -15,6 +15,7 @@ COPY data data
 COPY pages pages
 COPY public public
 COPY styles styles
+COPY interfaces interfaces
 
 RUN npm run export
 RUN grunt

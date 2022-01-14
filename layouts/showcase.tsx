@@ -4,7 +4,7 @@ import Card from "../components/card";
 import { margins } from "../styles/theme";
 import { transitions } from "../styles/transitions";
 
-function Showcase() {
+const Showcase = () => {
   return (
     <Flex alignItems="flex-start" mx="10vw" my={{ base: "2vh", "2xl": "5vh" }}>
       <Stack ml={margins.centeringMargin} direction="column">
@@ -29,7 +29,7 @@ function Showcase() {
               key={index}
               in={true}
               initialScale={0.9}
-              transition={transitions.showcase[`card${index}`]}
+              transition={Object.values(transitions.showcase.cards)[index]}
             >
               <Card project={project} key={project.modal.header} />
             </ScaleFade>
@@ -38,6 +38,6 @@ function Showcase() {
       </Stack>
     </Flex>
   );
-}
+};
 
 export default Showcase;

@@ -11,7 +11,7 @@ const SocialButtons = dynamic(() => import("../components/socialButtons"), {
   ssr: false,
 });
 
-function Intro() {
+const Intro = () => {
   return (
     <Box>
       <Stack
@@ -32,6 +32,6 @@ function Intro() {
       </Stack>
     </Box>
   );
-}
+};
 
 export default Intro;
