@@ -1,10 +1,10 @@
 import { Flex } from "@chakra-ui/react";
 import Head from "next/head";
-import Intro from "../components/intro";
-import Showcase from "../components/showcase";
-import ThemeToggle from "../fragments/themeToggle";
+import Intro from "../layouts/intro";
+import Showcase from "../layouts/showcase";
+import ThemeToggle from "../components/themeToggle";
 
-export default function Home() {
+const Index = () => {
   return (
     <>
       <Head>
@@ -40,4 +40,6 @@ export default function Home() {
       </Flex>
     </>
   );
-}
+};
+
+export default Index;
