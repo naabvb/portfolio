@@ -2,7 +2,7 @@ import { Box, Stack, Heading, Text, Icon, Link } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 import { transitions } from "../styles/transitions";
 
-function repositoryLink({ header, body, link }) {
+function RepositoryLink({ header, body, link }) {
   return (
     <Link _hover={{ textDecoration: "none" }} isExternal href={link}>
       <Box
@@ -40,4 +40,4 @@ function repositoryLink({ header, body, link }) {
   );
 }
 
-export default repositoryLink;
+export default RepositoryLink;

@@ -2,7 +2,7 @@ import { Box, IconButton, useColorMode, ScaleFade } from "@chakra-ui/react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { transitions } from "../styles/transitions";
 
-function themeToggle() {
+function ThemeToggle() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box py="1em" px="2em" position="absolute" right="0">
@@ -22,4 +22,4 @@ function themeToggle() {
   );
 }
 
-export default themeToggle;
+export default ThemeToggle;

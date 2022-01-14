@@ -11,7 +11,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { margins } from "../styles/theme";
 import { transitions } from "../styles/transitions";
 
-function socialButtons({ social }) {
+function SocialButtons({ social }) {
   const buttonSize = useBreakpointValue({ base: "md", md: "lg" });
   return (
     <Box>
@@ -55,4 +55,4 @@ function socialButtons({ social }) {
   );
 }
 
-export default socialButtons;
+export default SocialButtons;

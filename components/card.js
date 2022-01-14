@@ -6,10 +6,10 @@ import {
   useDisclosure,
   Heading,
 } from "@chakra-ui/react";
-import ReadMoreModal from "../components/readMoreModal";
+import ReadMoreModal from "./readMoreModal";
 import { transitions } from "../styles/transitions";
 
-function card({ project }) {
+function Card({ project }) {
   const disclosure = useDisclosure();
   return (
     <Box
@@ -57,4 +57,4 @@ function card({ project }) {
   );
 }
 
-export default card;
+export default Card;

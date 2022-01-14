@@ -2,14 +2,16 @@ FROM node:14-alpine as compiler
 WORKDIR /usr/app
 
 COPY package*.json ./
+COPY tsconfig.json ./
 COPY Gruntfile.js ./
 COPY next.config.js ./
+COPY .eslintrc.json ./
 
 RUN npm install && npm install -g grunt-cli
 
+COPY layouts layouts
 COPY components components
 COPY data data
-COPY fragments fragments
 COPY pages pages
 COPY public public
 COPY styles styles

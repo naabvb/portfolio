@@ -1,7 +1,7 @@
 import { Box, Image, SlideFade, useBreakpointValue } from "@chakra-ui/react";
 import { transitions } from "../styles/transitions";
 
-function headerImage({ image }) {
+function HeaderImage({ image }) {
   const imageSize = useBreakpointValue({
     base: "sm",
     md: "md",
@@ -38,4 +38,4 @@ function headerImage({ image }) {
   );
 }
 
-export default headerImage;
+export default HeaderImage;

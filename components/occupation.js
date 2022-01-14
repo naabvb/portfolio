@@ -2,7 +2,7 @@ import { Box, SlideFade, Stack, Text } from "@chakra-ui/react";
 import { customFontSizes, margins } from "../styles/theme";
 import { transitions } from "../styles/transitions";
 
-function occupation({ occupation }) {
+function Occupation({ occupation }) {
   return (
     <SlideFade in={true} transition={transitions.occupation.slideFade}>
       <Box>
@@ -31,4 +31,4 @@ function occupation({ occupation }) {
   );
 }
 
-export default occupation;
+export default Occupation;

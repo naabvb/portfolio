@@ -1,5 +1,5 @@
 import { Box, Text } from "@chakra-ui/react";
-import RepositoryLink from "../fragments/repositoryLink";
+import RepositoryLink from "../components/repositoryLink";
 
 export const projects = [
   {

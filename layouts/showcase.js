@@ -1,10 +1,10 @@
 import { Flex, Stack, Heading, SlideFade, ScaleFade } from "@chakra-ui/react";
 import { projects } from "../data/projects";
-import Card from "../fragments/card";
+import Card from "../components/card";
 import { margins } from "../styles/theme";
 import { transitions } from "../styles/transitions";
 
-function showcase() {
+function Showcase() {
   return (
     <Flex alignItems="flex-start" mx="10vw" my={{ base: "2vh", "2xl": "5vh" }}>
       <Stack ml={margins.centeringMargin} direction="column">
@@ -40,4 +40,4 @@ function showcase() {
   );
 }
 
-export default showcase;
+export default Showcase;

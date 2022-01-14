@@ -1,17 +1,17 @@
 import { Stack, Box } from "@chakra-ui/react";
-import Headers from "../fragments/headers";
-import Occupation from "../fragments/occupation";
+import Headers from "../components/headers";
+import Occupation from "../components/occupation";
 import { basicInfo } from "../data/basicInfo";
 import dynamic from "next/dynamic";
 
-const HeaderImage = dynamic(() => import("../fragments/headerImage"), {
+const HeaderImage = dynamic(() => import("../components/headerImage"), {
   ssr: false,
 });
-const SocialButtons = dynamic(() => import("../fragments/socialButtons"), {
+const SocialButtons = dynamic(() => import("../components/socialButtons"), {
   ssr: false,
 });
 
-function intro() {
+function Intro() {
   return (
     <Box>
       <Stack
@@ -34,4 +34,4 @@ function intro() {
   );
 }
 
-export default intro;
+export default Intro;

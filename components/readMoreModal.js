@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-function readMoreModal({ modal, disclosure }) {
+function ReadMoreModal({ modal, disclosure }) {
   const { isOpen, onClose } = disclosure;
   return (
     <Modal size="4xl" isOpen={isOpen} onClose={onClose}>
@@ -55,4 +55,4 @@ function readMoreModal({ modal, disclosure }) {
   );
 }
 
-export default readMoreModal;
+export default ReadMoreModal;
