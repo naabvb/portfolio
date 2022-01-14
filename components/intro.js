@@ -1,9 +1,15 @@
 import { Stack, Box } from "@chakra-ui/react";
-import ImageOfMe from "../fragments/imageOfMe";
 import Headers from "../fragments/headers";
 import Occupation from "../fragments/occupation";
-import SocialButtons from "../fragments/socialButtons";
 import { basicInfo } from "../data/basicInfo";
+import dynamic from "next/dynamic";
+
+const HeaderImage = dynamic(() => import("../fragments/headerImage"), {
+  ssr: false,
+});
+const SocialButtons = dynamic(() => import("../fragments/socialButtons"), {
+  ssr: false,
+});
 
 function intro() {
   return (
@@ -19,7 +25,7 @@ function intro() {
           direction={{ base: "column-reverse", md: "row" }}
         >
           <Headers headers={basicInfo.headers} />
-          <ImageOfMe image={basicInfo.imageName} />
+          <HeaderImage image={basicInfo.imageName} />
         </Stack>
         <Occupation occupation={basicInfo.occupation} />
         <SocialButtons social={basicInfo.social} />

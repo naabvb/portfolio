@@ -7,7 +7,14 @@ export const transitions = {
     },
     transition: "all .5s ease",
   },
-
+  repositoryLink: {
+    hover: {
+      transform: "translate3D(0,1px,0) scale(1.01)",
+      transition: "all .4s ease",
+      cursor: "pointer",
+    },
+    transition: "all .5s ease",
+  },
   header: {
     slideFade: { enter: { duration: 0.3, delay: 0.4 } },
   },

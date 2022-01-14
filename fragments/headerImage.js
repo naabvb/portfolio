@@ -1,7 +1,13 @@
-import { Box, Image, SlideFade } from "@chakra-ui/react";
+import { Box, Image, SlideFade, useBreakpointValue } from "@chakra-ui/react";
 import { transitions } from "../styles/transitions";
 
-function imageOfMe({ image }) {
+function headerImage({ image }) {
+  const imageSize = useBreakpointValue({
+    base: "sm",
+    md: "md",
+    lg: "lg",
+  });
+
   return (
     <SlideFade in={true} transition={transitions.header.slideFade}>
       <Box alignItems="center" display="flex">
@@ -24,7 +30,7 @@ function imageOfMe({ image }) {
             lg: "250px",
             "2xl": "350px",
           }}
-          src={`/images/${image}`}
+          src={`/images/${imageSize}/${image}`}
           alt="Picture of Lauri"
         />
       </Box>
@@ -32,4 +38,4 @@ function imageOfMe({ image }) {
   );
 }
 
-export default imageOfMe;
+export default headerImage;

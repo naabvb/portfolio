@@ -11,8 +11,8 @@ function repositoryLink({ header, body, link }) {
         my="3"
         className="repositoryLinkBody"
         shadow="md"
-        _hover={transitions.card.hover}
-        transition={transitions.card.transition}
+        _hover={transitions.repositoryLink.hover}
+        transition={transitions.repositoryLink.transition}
       >
         <Stack
           alignItems="center"

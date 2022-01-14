@@ -14,7 +14,7 @@
     "docker:run:server": "docker run --rm -d --name portfolio-server -p 3000:80/tcp portfolio-server:latest"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.7.3",
+    "@chakra-ui/react": "^1.7.4",
     "@chakra-ui/theme-tools": "^1.3.1",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",

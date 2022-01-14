@@ -52,12 +52,7 @@ function card({ project }) {
           {project.card.body}
         </Box>
       </Box>
-      <ReadMoreModal
-        card={project.card}
-        disclosure={disclosure}
-        modal={project.modal}
-        externalLink={project.externalLink}
-      />
+      <ReadMoreModal disclosure={disclosure} modal={project.modal} />
     </Box>
   );
 }
