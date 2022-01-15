@@ -11,8 +11,9 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { ReadMoreModalPayload } from "../interfaces/components";
 
-function ReadMoreModal({ modal, disclosure }) {
+const ReadMoreModal = ({ modal, disclosure }: ReadMoreModalPayload) => {
   const { isOpen, onClose } = disclosure;
   return (
     <Modal size="4xl" isOpen={isOpen} onClose={onClose}>
@@ -53,6 +54,6 @@ function ReadMoreModal({ modal, disclosure }) {
       </ModalContent>
     </Modal>
   );
-}
+};
 
 export default ReadMoreModal;

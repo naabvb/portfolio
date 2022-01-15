@@ -58,7 +58,7 @@ export const margins = {
 };
 
 export const customFontSizes = {
-  occupationFontSize: { base: "md", md: "lg", lg: "2xl", "2xl": "2xl" },
+  occupationFontSize: { base: "md", md: "lg", lg: "2xl" },
 };
 
 const fonts = {

@@ -1,4 +1,4 @@
-import { BasicInfo } from "../interfaces/data";
+import { BasicInfo } from "../interfaces/basicInfo";
 
 export const basicInfo: BasicInfo = {
   headers: {

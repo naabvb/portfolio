@@ -1,7 +1,8 @@
 import { Box, Text } from "@chakra-ui/react";
 import RepositoryLink from "../components/repositoryLink";
+import { Project } from "../interfaces/projects";
 
-export const projects = [
+export const projects: Project[] = [
   {
     card: {
       badges: ["NodeJS", "React", "Python"],
