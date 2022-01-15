@@ -1,16 +1,24 @@
-export const basicInfo = {
+import { BasicInfo } from "../interfaces/data";
+
+export const basicInfo: BasicInfo = {
   headers: {
     name: "Lauri Pimiä",
     title: "Full Stack software engineer.",
   },
   occupation: {
-    work: "Application specialist at Oy Samlink Ab",
-    education: "M.Sc. in Mathematical Information Technology",
-    location: "Jyväskylä, Finland",
+    work: { emoji: "💼", text: "Application specialist at Oy Samlink Ab" },
+    education: {
+      emoji: "🎓",
+      text: "M.Sc. in Mathematical Information Technology",
+    },
+    location: { emoji: "🌍", text: "Jyväskylä, Finland" },
   },
   social: {
-    githubLink: "https://github.com/naabvb",
-    linkedinLink: "https://linkedin.com/in/lauri-pimi%C3%A4-a4413a154",
+    github: { name: "Github", link: "https://github.com/naabvb" },
+    linkedin: {
+      name: "LinkedIn",
+      link: "https://linkedin.com/in/lauri-pimi%C3%A4-a4413a154",
+    },
   },
 
   imageName: "lauri.png",

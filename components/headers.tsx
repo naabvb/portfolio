@@ -1,8 +1,9 @@
 import { Stack, Box, Text, Heading, SlideFade } from "@chakra-ui/react";
+import { HeadersPayload } from "../interfaces/components";
 import { margins } from "../styles/theme";
 import { transitions } from "../styles/transitions";
 
-function Headers({ headers }) {
+const Headers = ({ headers }: HeadersPayload) => {
   return (
     <Stack
       spacing={{ base: "3", md: "5", lg: "0" }}
@@ -38,6 +39,6 @@ function Headers({ headers }) {
       </SlideFade>
     </Stack>
   );
-}
+};
 
 export default Headers;

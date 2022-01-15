@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 const HeaderImage = dynamic(() => import("../components/headerImage"), {
   ssr: false,
 });
-const SocialButtons = dynamic(() => import("../components/socialButtons"), {
+const Social = dynamic(() => import("../components/social"), {
   ssr: false,
 });
 
@@ -28,7 +28,7 @@ const Intro = () => {
           <HeaderImage image={basicInfo.imageName} />
         </Stack>
         <Occupation occupation={basicInfo.occupation} />
-        <SocialButtons social={basicInfo.social} />
+        <Social social={basicInfo.social} />
       </Stack>
     </Box>
   );
