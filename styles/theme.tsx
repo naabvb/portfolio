@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react";
+import { ChakraProps, extendTheme } from "@chakra-ui/react";
 import { mode, createBreakpoints } from "@chakra-ui/theme-tools";
 
 const config = {
@@ -7,7 +7,7 @@ const config = {
 };
 
 const styles = {
-  global: (props) => ({
+  global: (props: ChakraProps) => ({
     body: {
       color: mode("gray.800", "white")(props),
       bg: mode("gray.100", "black")(props),
@@ -47,7 +47,7 @@ const styles = {
     },
     ".secondaryHeader": {
       color: "gray.200",
-      bgGradient: mode("linear(to-l, #8A2387, #E94057)")(props),
+      bgGradient: mode("linear(to-l, #8A2387, #E94057)", "none")(props),
       bgClip: mode("text", "")(props),
     },
   }),
@@ -58,7 +58,7 @@ export const margins = {
 };
 
 export const customFontSizes = {
-  occupationFontSize: { base: "md", md: "lg", lg: "2xl", "2xl": "2xl" },
+  occupationFontSize: { base: "md", md: "lg", lg: "2xl" },
 };
 
 const fonts = {
