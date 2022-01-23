@@ -5,7 +5,7 @@ import { Project } from "../interfaces/projects";
 export const projects: Project[] = [
   {
     card: {
-      badges: ["NodeJS", "React", "Python"],
+      badges: ["Typescript", "NodeJS", "React", "Python"],
       header: "Trailcams PWA",
       image: "trailcams.jpg",
       body: "Fullstack application that consists of NodeJS backend, React frontend, multiple Python microservices and AWS integration.",
@@ -31,6 +31,11 @@ export const projects: Project[] = [
             header="RemoveEmailsAndFiles"
             body="Microservice that removes files and correspoding emails."
             link="https://github.com/naabvb/removeEmailsAndFiles"
+          />
+          <RepositoryLink
+            header="UpdateDbItems"
+            body="Microservice that updates dynamoDB with new items."
+            link="https://github.com/naabvb/updateDbItems"
           />
           <RepositoryLink
             header="SyncDirector"
