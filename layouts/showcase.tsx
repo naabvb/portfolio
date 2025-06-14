@@ -3,6 +3,7 @@ import { projects } from "../data/projects";
 import Card from "../components/card";
 import { margins } from "../styles/theme";
 import { transitions } from "../styles/transitions";
+import { Project } from "../interfaces/projects";
 
 const Showcase = () => {
   return (
@@ -24,7 +25,7 @@ const Showcase = () => {
           justify="space-evenly"
           spacing="10"
         >
-          {projects.map((project, index) => (
+          {projects.map((project: Project, index) => (
             <ScaleFade
               key={index}
               in={true}

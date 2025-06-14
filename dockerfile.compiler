@@ -1,4 +1,4 @@
-FROM node:16-alpine as compiler
+FROM node:16-alpine AS compiler
 WORKDIR /usr/app
 
 COPY package*.json ./
